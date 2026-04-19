@@ -10,6 +10,8 @@
 
 ### 使用方式
 ```
+pip install pyquery_xpath
+from pyquery_xpath import PyQuery
 >>> h = '<a class="foo1"><span class="foo2"><span class="foo3">Hello</span></span></a>'
 >>> d = PyQuery(h)
 >>> d('a').xpath('.//span[@class="foo2"]')
